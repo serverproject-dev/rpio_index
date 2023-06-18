@@ -14,10 +14,12 @@
 
 	<link integrity="" rel="stylesheet" href="https://redpencil.io/assets/vendor-d41d8cd98f00b204e9800998ecf8427e.css">
 	<link integrity="" rel="stylesheet" href="https://redpencil.io/assets/frontend-redpencil-0fddd26791827192a8f38b5eff81cc26.css">
+	<!--<link integrity="" rel="stylesheet" href="./css/mash.css">-->
 	<link integrity="" rel="stylesheet" href="./css/style.css">
 	
 	<link rel="icon" href="https://redpencil.io/assets/favicon.ico" type="image/x-ico; charset=binary"/>
 	  <title>solid.redpencil.io</title>
+	  <script defer="defer" src="/mashlib.min.js"></script>
   </head>
 <body class = "index-page">
   <div class="header">
@@ -27,12 +29,17 @@
     <div class="header-center">
       <h1 class="title">solid.redpencil.io</h1>
     </div>
-    <div class="header-right" id="rpioLoginStatusArea">
+    <div class="header-right" id="loginStatusArea">
     </div>
-    <input type="button" onclick="window.location.href='./index2.html'" value="Log in" style="padding: 1em; border-radius:0.5em; font-size: 100%;background-color: #eef;">
-    <input type="button" onclick="window.location.href='/idp/register/'" value="Sign up" style="padding: 1em; border-radius:0.5em; font-size: 100%;background-color: #efe;">
+    <!--<input type="button" onclick="window.location.href='./index2.html'" value="Log in" style="padding: 1em; border-radius:0.5em; font-size: 100%;background-color: #eef;">
+    <input type="button" onclick="window.location.href='/idp/register/'" value="Sign up" style="padding: 1em; border-radius:0.5em; font-size: 100%;background-color: #efe;">-->
     <a href = "https://solidos.github.io/userguide/"><img src="./pics/qm.svg"></a>
   </div>
+  <div> <!-- class="container" id="prototype" -->
+
+    <h3 style="display:none" id="loggedIn" class="webId"></h3>
+
+    <div> <!--class="content"-->
   <div>
     <br />
 	<table align = "center" width = "80%">
@@ -40,7 +47,7 @@
       <td>
         <a href = "./"><img src = "./pics/rpio-logo.svg" width = 126 height = 24 alt = "redpencil Logo"/></a>
         <br />
-	      </td>
+        </td>
         <td>
           <div align = "right">
             <a href = "https://gamma.app/docs/redpencilio-8dsenvp6agsee2z?mode=present#card-t6yckx8fpdmvdiz
@@ -110,16 +117,15 @@ And you can freely create, modify, move, share and delete.<br /><br />
 If it helps, imagine it like a dropbox.<br />
 It is additionally seen like a new layer on top of the existing web.<br />
 You can, for instance, utilize it for your health information, fitness data, personal details, business records, banking data, and even your heating preferences or shoe size information.<br /><br />
-			We guide you through the jungle of the new web 3.0. The Future is here.<br /></td></tr>
-	<tr><td>
+We guide you through the jungle of the new web 3.0. The Future is here.<br /></td></tr>
+<tr><td>
 		<br /><a class="hover:text-red-600" href = "https://solidproject.org/">The Solid Project</a>
 		<br /><a class="hover:text-red-600" href = "https://jeff-zucker.github.io/specs2glossary/tech-glossary.html">glossary</a>
 		<br /><a class="hover:text-red-600" href = "https://github.com/serverproject-dev/rpio_index">code at github</a>
 		<br /><a class="hover:text-red-600" href = "https://solidos.github.io/mashlib/dist/browse.html?uri=https%3A%2F%2Fsolid.redpencil.io">debug parameter</a>
 		<br /><a class="hover:text-red-600" href = "./terms.html">Terms and Conditions</a>
 		<br /><br />Server location Helsinki, Finland
-	  </td>
-		<td>
+	  </td><td>
 	  Solid Apps<br />
 	  <a href = "https://penny.vincenttunru.com/">Penny</a><br/ >
 	  <a href = "https://dokie.li/">dokie.li</a><br/ >
@@ -170,6 +176,9 @@ You can, for instance, utilize it for your health information, fitness data, per
 <br />
 <!-- /footer -->
 </div>
-
+</div> <!-- end content-->
+</div> <!-- end container-->
+<script src="/mashlib.js"></script>
+<script src="/button-helper.js"></script>
 </body>
 </html>
